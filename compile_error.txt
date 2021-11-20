@@ -1,0 +1,210 @@
+
+
+.../urweb-langs/mainfail.ur:27:7: (to 27:18) Unsupported expression
+Expression:  $renderMenu2 [[#1 = (), #2 = ()]]
+/usr/local/lib/urweb/ur/top.ur:21:13: (to 21:32) Unsupported expression
+Expression: 
+fn tf :: {Unit} -> Type =>
+ (fn f :
+  nm :: Name ->
+   v :: Unit -> r :: {Unit} -> (tf r) -> tf (([nm = v]) ++ r) =>
+  (fn i : tf ([]) =>
+   (f [#1] [()] [[#2 = ()]]) ((f [#2] [()] [[]]) i)))
+.../urweb-langs/mainfail.ur:9:17: (to 9:32) Unsupported expression
+Expression: 
+fn ts :: {Unit} =>
+ (fn fl :
+  tf :: {Unit} -> Type ->
+   (nm :: Name ->
+     v :: Unit -> r :: {Unit} -> (tf r) -> tf (([nm = v]) ++ r)) ->
+    (tf ([])) -> tf ts =>
+  (fn r :
+   $(map
+      (fn _ :: Unit =>
+        {Id : FFI(Basis.string), Name : FFI(Basis.string), 
+          NativeName : FFI(Basis.string), 
+          Page : {} -> FFI(Basis.transaction) FFI(Basis.xbody)}) ts)
+   =>
+   (((fl
+       [fn r :: {Unit} =>
+         $(map
+            (fn _ :: Unit =>
+              {Id : FFI(Basis.string), Name : FFI(Basis.string), 
+                NativeName : FFI(Basis.string), 
+                Page : {} -> FFI(Basis.transaction) FFI(Basis.xbody)})
+            r) -> FFI(Basis.xbody)])
+      (fn nm :: Name =>
+        fn t :: Unit =>
+         fn rest :: {Unit} =>
+          (fn acc :
+           $(map
+              (fn _ :: Unit =>
+                {Id : FFI(Basis.string), Name : FFI(Basis.string), 
+                  NativeName : FFI(Basis.string), 
+                  Page :
+                   {} -> FFI(Basis.transaction) FFI(Basis.xbody)})
+              rest) -> FFI(Basis.xbody) =>
+           (fn r :
+            $(([nm =
+                 {Id : FFI(Basis.string), Name : FFI(Basis.string), 
+                   NativeName : FFI(Basis.string), 
+                   Page :
+                    {} -> FFI(Basis.transaction) FFI(Basis.xbody)}])
+               ++
+               map
+                (fn _ :: Unit =>
+                  {Id : FFI(Basis.string), Name : FFI(Basis.string), 
+                    NativeName : FFI(Basis.string), 
+                    Page :
+                     {} -> FFI(Basis.transaction) FFI(Basis.xbody)})
+                rest) =>
+            ((FFI(Basis.join)
+               [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]] [[]]
+               [[]])
+              ((FFI(Basis.cdata)
+                 [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]]) "\n"))
+             (((FFI(Basis.join)
+                 [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]] [[]]
+                 [[]])
+                ((FFI(Basis.cdata)
+                   [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]])
+                  "\t\t   "))
+               (((FFI(Basis.join)
+                   [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]]
+                   [[]] [[]]) (acc (r -- nm)))
+                 (((FFI(Basis.join)
+                     [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]]
+                     [[]] [[]])
+                    ((FFI(Basis.cdata)
+                       [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]])
+                      "\n"))
+                   (((FFI(Basis.join)
+                       [[#Body = (), #Dyn = (), #MakeForm = ()]] [[]]
+                       [[]] [[]])
+                      ((FFI(Basis.cdata)
+                         [[#Body = (), #Dyn = (), #MakeForm = ()]]
+                         [[]]) "\t\t   "))
+                     (((FFI(Basis.join)
+                         [[#Body = (), #Dyn = (), #MakeForm = ()]]
+                         [[]] [[]] [[]])
+                        ((((((((FFI(Basis.tag)
+                                 [[#Link =
+                                    FFI(Basis.transaction)
+                                     (FFI(Basis.xml) ([#Html = ()])
+                                       ([]) ([]))]]
+                                 [[#Href = FFI(Basis.url), 
+                                    #Target = FFI(Basis.string), 
+                                    #Rel = FFI(Basis.string), 
+                                    #Download = FFI(Basis.string), 
+                                    #Data = FFI(Basis.data_attr), 
+                                    #Id = FFI(Basis.id), 
+                                    #Title = FFI(Basis.string), 
+                                    #Role = FFI(Basis.string), 
+                                    #Align = FFI(Basis.string), 
+                                    #Onblur =
+                                     FFI(Basis.transaction) {}, 
+                                    #Onfocus =
+                                     FFI(Basis.transaction) {}, 
+                                    #Onclick =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Oncontextmenu =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Ondblclick =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onmousedown =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onmouseenter =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onmouseleave =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onmousemove =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onmouseout =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onmouseover =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onmouseup =
+                                     FFI(Basis.mouseEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onkeydown =
+                                     FFI(Basis.keyEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onkeypress =
+                                     FFI(Basis.keyEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onkeyup =
+                                     FFI(Basis.keyEvent) ->
+                                      FFI(Basis.transaction) {}, 
+                                    #Onresize =
+                                     FFI(Basis.transaction) {}, 
+                                    #Onscroll =
+                                     FFI(Basis.transaction) {}]]
+                                 [[#Body = (), #Dyn = (), 
+                                    #MakeForm = ()]]
+                                 [[#Body = (), #Dyn = (), 
+                                    #MakeForm = ()]] [[]] [[]] [[]]
+                                 [[]]) FFI(Basis.null))
+                               [FFIC(Basis.None)
+                                                 [FFI(Basis.signal)
+                                                   FFI(Basis.css_class)]])
+                              FFI(Basis.noStyle))
+                             [FFIC(Basis.None)
+                                               [FFI(Basis.signal)
+                                                 FFI(Basis.css_style)]])
+                            {Link =
+                              CLOSURE(wrap_langRender, r.nm.#Id)})
+                           ((FFI(Basis.a)
+                              [[#Dyn = (), #MakeForm = ()]]) {}))
+                          (((FFI(Basis.join)
+                              [[#Body = (), #Dyn = (), #MakeForm = ()]]
+                              [[]] [[]] [[]])
+                             ((FFI(Basis.cdata)
+                                [[#Body = (), #Dyn = (), 
+                                   #MakeForm = ()]] [[]]) " "))
+                            (((FFI(Basis.join)
+                                [[#Body = (), #Dyn = (), 
+                                   #MakeForm = ()]] [[]] [[]] [[]])
+                               ((FFI(Basis.cdata)
+                                  [[#Body = (), #Dyn = (), 
+                                     #MakeForm = ()]] [[]])
+                                 (((FFI(Basis.show)
+                                     [FFI(Basis.string)])
+                                    FFI(Basis.show_string))
+                                   r.nm.#Name)))
+                              ((FFI(Basis.cdata)
+                                 [[#Body = (), #Dyn = (), 
+                                    #MakeForm = ()]] [[]]) " ")))))
+                       (((FFI(Basis.join)
+                           [[#Body = (), #Dyn = (), #MakeForm = ()]]
+                           [[]] [[]] [[]])
+                          ((FFI(Basis.cdata)
+                             [[#Body = (), #Dyn = (), #MakeForm = ()]]
+                             [[]]) "\n"))
+                         ((FFI(Basis.cdata)
+                            [[#Body = (), #Dyn = (), #MakeForm = ()]]
+                            [[]]) "\t\t ")))))))))))
+     ((fn _ : {} =>
+       (FFI(Basis.cdata) [[#Dyn = (), #MakeForm = (), #Body = ()]]
+         [[]]) ""))) r))
+.../urweb-langs/mainfail.ur:9:17: (to 9:32) Unsupported type constructor
+Constructor: 
+ts :: {Unit} ->
+ (tf :: {Unit} -> Type ->
+   (nm :: Name ->
+     v :: Unit -> r :: {Unit} -> (tf r) -> tf (([nm = v]) ++ r)) ->
+    (tf ([])) -> tf ts) ->
+  $(map
+     (fn _ :: Unit =>
+       {Id : FFI(Basis.string), Name : FFI(Basis.string), 
+         NativeName : FFI(Basis.string), 
+         Page : {} -> FFI(Basis.transaction) FFI(Basis.xbody)}) ts)
+   -> FFI(Basis.xbody)
